@@ -4,16 +4,16 @@
 <style>
 *{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#f8fafc;color:#0f172a}
 a{text-decoration:none}
-header{background:#0a1f4d;color:#fff;padding:10px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20}
+header{background:#0a1f4d;color:#fff;padding:10px 18px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:20;flex-wrap:wrap;gap:10px}
 header b{font-size:19px;letter-spacing:1px}header span{color:#d4af37}
 .logo-img{height:52px;width:auto;background:#fff;border-radius:10px;padding:4px}
 .logo-hero{height:120px;width:auto;background:#fff;border-radius:16px;padding:10px;box-shadow:0 4px 20px rgba(0,0,0,.3)}
 .logo-footer{height:70px;width:auto;background:#fff;border-radius:12px;padding:6px}
-nav a{color:#fff;margin:0 10px;font-weight:700;font-size:13px}nav a:hover{color:#d4af37}
+nav a{color:#fff;margin:0 6px;font-weight:700;font-size:13px}nav a:hover{color:#d4af37}
 .hero{background:linear-gradient(135deg,#0a1f4d,#0d9488);color:#fff;padding:50px 20px;text-align:center}
 .hero h1{font-size:38px;margin:10px 0}.hero h1 span{color:#d4af37}.hero p{font-size:16px;max-width:700px;margin:10px auto;line-height:1.6}
 .btn{display:inline-block;padding:13px 22px;border-radius:30px;font-weight:800;margin:6px}
-.gold{background:#d4af37;color:#0a1f4d}.white{background:#fff;color:#0a1f4d}.teal{background:#0d9488;color:#fff}.greenbtn{background:#059669;color:#fff}
+.gold{background:#d4af37;color:#0a1f4d}.white{background:#fff;color:#0a1f4d}.teal{background:#0d9488;color:#fff}.greenbtn{background:#059669;color:#fff}.navybtn{background:#0a1f4d;color:#fff;border:2px solid #d4af37}
 .wrap{max-width:1100px;margin:0 auto;padding:20px}
 .card{background:#fff;border-radius:16px;padding:20px;margin:12px 0;box-shadow:0 2px 10px rgba(0,0,0,.08)}
 .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
@@ -28,25 +28,37 @@ nav a{color:#fff;margin:0 10px;font-weight:700;font-size:13px}nav a:hover{color:
 footer{background:#0a1f4d;color:#fff;padding:30px 20px;text-align:center;margin-top:20px}
 input,textarea,select{width:100%;padding:12px;margin:6px 0;border-radius:10px;border:1px solid #ddd}
 .explain{background:#ecfdf5;border:2px solid #059669;border-radius:12px;padding:16px}
+.topbtns{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;padding:10px;background:#fff;border-bottom:2px solid #0a1f4d}
+.topbtns a{padding:10px 14px;border-radius:20px;font-weight:800;font-size:13px}
 </style></head>
 <body>
 
-<!-- HEADER WITH logo.png -->
+<!-- HEADER WITH REAL logo.png -->
 <header><div style="display:flex;align-items:center;gap:10px"><img src="logo.png" alt="XINTIMANI GROUP Logo" class="logo-img" onerror="this.style.display='none'"><div><b>XINTIMANI <span>GROUP</span></b><br><small style="color:#5eead4">Building Solutions. Empowering Communities.</small></div></div>
-<nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#divisions">DIVISIONS</a><a href="#makhanani">MAKHANANI LTSM</a><a href="#pricing">PRICING</a><a href="#contact">CONTACT</a></nav>
+<nav><a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#divisions">DIVISIONS</a><a href="#makhanani">MAKHANANI LTSM</a><a href="#pricing">PRICING</a><a href="#contact">CONTACT</a><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html" target="_blank" style="background:#d4af37;color:#0a1f4d;padding:6px 12px;border-radius:20px">💼 JOB LIST</a><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank" style="background:#0a1f4d;color:#fff;border:2px solid #d4af37;padding:6px 12px;border-radius:20px">💰 FINANCE 🔒 ADMIN</a></nav>
 <a href="https://wa.me/27780233263" style="background:#16a34a;color:#fff;padding:10px 16px;border-radius:20px;font-weight:800;font-size:13px">💬 WHATSAPP US</a></header>
 
-<!-- HERO WITH logo.png -->
+<!-- QUICK BUTTON BAR - JOBLIST + FINANCE -->
+<div class="topbtns">
+<a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/" target="_blank" style="background:#0a1f4d;color:#fff">📚 OPEN MAKHANANI LTSM →</a>
+<a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html" target="_blank" style="background:#d4af37;color:#0a1f4d">💼 JOB LIST BY LEVEL (L1-L6) →</a>
+<a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank" style="background:#fff;color:#0a1f4d;border:2px solid #0a1f4d">💰 FINANCE 🔒 ADMIN ONLY →</a>
+<a href="#pricing" style="background:#0d9488;color:#fff">💰 PRICING</a>
+</div>
+
+<!-- HERO WITH REAL logo.png -->
 <section id="home" class="hero">
 <img src="logo.png" alt="XINTIMANI GROUP" class="logo-hero" onerror="this.style.display='none'">
 <h1>XINTIMANI <span>GROUP</span></h1>
 <p><b>Building Solutions. Empowering Communities.</b><br>We build simple, affordable systems that work in real South African schools — even offline.</p>
-<p><span class="badge">✅ TRUSTED BY WORDSWORTH HIGH SCHOOL</span> <span class="badge">🇿🇦 100% SOUTH AFRICAN</span></p>
-<div><a class="btn gold" href="#makhanani">📚 SEE MAKHANANI LTSM</a> <a class="btn white" href="#pricing">💰 SEE PRICING</a></div>
+<p><span class="badge">✅ TRUSTED BY WORDSWORTH HIGH SCHOOL</span> <span class="badge">🇿🇦 100% SOUTH AFRICAN</span> <span class="badge">🔒 FINANCE = ADMIN ONLY</span></p>
+<div><a class="btn gold" href="#makhanani">📚 SEE MAKHANANI LTSM</a> <a class="btn white" href="#pricing">💰 SEE PRICING</a> <a class="btn teal" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html" target="_blank">💼 JOB LIST BY LEVEL</a> <a class="btn navybtn" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank">💰 FINANCE 🔒 ADMIN ONLY</a></div>
 <p style="font-size:13px;opacity:.9">Founder / CEO — Mr Vusi Chauke | WhatsApp 0780233263 | admin@xintimanigroup.co.za</p>
+<p style="font-size:12px;opacity:.8">Finance button opens LTSM System and asks for Admin Password. No money is shown on this public website.</p>
 </section>
 
 <div class="wrap">
+
 <section id="about" class="card"><h2>👋 About Xintimani Group</h2>
 <p><b>Xintimani Group</b> was founded by <b>Mr Vusi Chauke</b> with one mission: <b>Build solutions that empower communities.</b></p>
 <p>We saw schools losing textbooks, losing money, and losing time on paper registers. So we built <b>Makhanani LTSM</b> — a system a principal, librarian, teacher or learner can use in 5 minutes, on any phone.</p>
@@ -58,10 +70,15 @@ input,textarea,select{width:100%;padding:12px;margin:6px 0;border-radius:10px;bo
 <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><div><span class="badge">DIVISION 1 — LIVE NOW ✅</span><h3>💻 XINTIMANI DIGITALS</h3><p style="color:#475569;margin:4px 0">Digital Systems • School Software • Websites • WhatsApp Tools</p></div><a class="btn teal" href="#makhanani">Explore →</a></div>
 <p><b>Flagship Product:</b> <b>MAKHANANI LTSM V1.58</b> — The School System That Works Offline.</p>
 <div class="grid">
-<div class="card"><h4>📚 Makhanani LTSM</h4><p>Books, Learners, Issue / Retrieve, Staff, Librarian, Jobs, Admin & Audit Log. Live Sync. One subscription shared by all staff.</p><a class="btn gold" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/" target="_blank">OPEN DEMO →</a></div>
+<div class="card"><h4>📚 Makhanani LTSM</h4><p>Books, Learners, Issue / Retrieve, Staff, Librarian, Jobs, Admin & Audit Log. Live Sync. One subscription shared by all staff.</p><a class="btn gold" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/" target="_blank">OPEN SYSTEM →</a><br><a class="btn teal" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html" target="_blank">💼 JOB LIST →</a> <a class="btn navybtn" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank">💰 FINANCE 🔒</a></div>
 <div class="card"><h4>🌐 Websites For Schools & Business</h4><p>Professional websites like this one. Fast, mobile-friendly, WhatsApp-ready.</p><a class="btn white" style="border:2px solid #0a1f4d" href="#contact">GET A WEBSITE →</a></div>
 <div class="card"><h4>📱 Digital Flyers & Branding</h4><p>Logos, flyers, WhatsApp adverts, job lists, workflow posters — Done for you.</p><a class="btn white" style="border:2px solid #0a1f4d" href="#contact">ORDER DESIGN →</a></div>
 </div>
+</div>
+<div class="grid" style="margin-top:14px">
+<div class="card" style="opacity:.75"><span class="badge">DIVISION 2 — COMING SOON</span><h3>🏗️ Xintimani Construction / Projects</h3><p>Community building projects. Details to be announced by Founder.</p></div>
+<div class="card" style="opacity:.75"><span class="badge">DIVISION 3 — COMING SOON</span><h3>🌱 Xintimani Community / Training</h3><p>Training, youth empowerment & community upliftment.</p></div>
+<div class="card" style="opacity:.75"><span class="badge">DIVISION 4 — COMING SOON</span><h3>🛒 Xintimani Supplies</h3><p>School supplies, LTSM materials & essentials.</p></div>
 </div>
 </section>
 
@@ -69,38 +86,42 @@ input,textarea,select{width:100%;padding:12px;margin:6px 0;border-radius:10px;bo
 <p><b>The School System That Works Offline.</b> No more lost books. No more paper registers.</p>
 <h3>⚙️ How It Works — In 6 Steps</h3>
 <div class="grid"><div class="step"><b>1</b><br><b>REGISTER</b><br>EMIS + Password<br>7 Days FREE Trial</div><div class="step"><b>2</b><br><b>LOGIN AS ADMIN</b><br>Your school sees ONLY your data</div><div class="step"><b>3</b><br><b>ADD BOOKS & LEARNERS</b><br>Grade Lock, No Duplicate Titles</div><div class="step"><b>4</b><br><b>ISSUE / RETRIEVE</b><br>Issue, Return, Print Receipt</div><div class="step"><b>5</b><br><b>STAFF, LIBRARIAN & JOBS</b><br>All staff share ONE subscription</div><div class="step"><b>6</b><br><b>ADMIN & AUDIT LOG</b><br>Live Sync, See who did what</div></div>
-<div><a class="btn gold" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/" target="_blank">🚀 TRY MAKHANANI LTSM NOW</a> <a class="btn teal" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20Makhanani%20LTSM%20for%20my%20school">💬 ASK ON WHATSAPP</a></div>
+<div style="text-align:center;margin-top:12px"><a class="btn gold" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/" target="_blank">🚀 TRY MAKHANANI LTSM NOW</a> <a class="btn teal" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html" target="_blank">💼 VIEW JOB LIST BY LEVEL →</a> <a class="btn navybtn" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank">💰 FINANCE 🔒 ADMIN ONLY</a></div>
+<p style="font-size:12px;text-align:center;color:#64748b">💼 Job List: L1 Superadmin → L2 Principal → L3 Librarian → L4 Teacher → L5 Support → L6 Learner<br>💰 Finance: Admin Only. Opens LTSM System, asks Admin Password. No money shown here.</p>
 </section>
 
+<!-- CORRECTED PRICING - SETUP ONCE FOREVER + PREMIUM RENEWED YEARLY -->
 <section id="pricing"><h2>💰 Pricing — Makhanani LTSM</h2>
 <div class="explain">
 <h3 style="margin:0">💡 How Pricing Works — Read This First (30 Seconds)</h3>
-<p><b>1. SETUP FEE = Pay ONCE, FOREVER.</b> You pay setup only one time when you join. You NEVER pay setup again.<br>
+<p><b>1. SETUP FEE = Pay ONCE, FOREVER.</b> You pay setup only one time when you join. You NEVER pay setup again — even if you stay for 5 years.<br>
 <b>2. PREMIUM = Your Subscription.</b> After setup, you choose <b>Monthly</b> OR <b>Yearly</b>. Premium is renewed — Monthly renews every month, Yearly renews every year.<br>
 <b>3. ONE subscription shared by ALL staff</b> in your school. No per-user fees.</p>
 <p style="background:#fff;padding:10px;border-radius:8px"><b>Example — STANDARD:</b> Pay Setup R4 500 once forever ✅ Then choose: R500 / month (renews monthly) <b>OR</b> R7 500 / year (renews yearly). Next year you pay ONLY the premium — NOT setup again.</p>
 </div>
 <div class="grid2" style="margin-top:14px">
 <div class="price"><h3>🎁 7 DAYS FREE TRIAL</h3><p>Try Before You Pay</p><div class="setup">Setup: FREE</div><p>Premium: <b>FREE for 7 Days</b></p><p>All Features<br>1 School<br>WhatsApp Support</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20the%20FREE%207%20Days%20DEMO%20for%20Makhanani%20LTSM">➡️📱 REQUEST DEMO</a></div>
-<div class="price"><h3>STARTER</h3><p>1 School</p><div class="setup">Setup: R3 000<br><small style="font-size:12px;color:#059669">✅ ONCE-OFF FOREVER — Never Pay Again</small></div><p><b>Then Choose Premium:</b><br>Monthly: <b>R350 / month</b> — Renews Monthly<br>Yearly: <b>R4 500 / year</b> — Renews Yearly</p><p>All LTSM Features<br>1 School • Up to 300 Learners</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20STARTER.%20Setup%20R3000%20once%20forever%20%2B%20Premium%20R350%2Fmonth%20OR%20R4500%2Fyear">➡️📱 REQUEST STARTER</a></div>
+<div class="price"><h3>STARTER</h3><p>1 School</p><div class="setup">Setup: R3 000<br><small style="font-size:12px;color:#059669">✅ ONCE-OFF FOREVER — Never Pay Again</small></div><p><b>Then Choose Premium:</b><br>Monthly: <b>R350 / month</b> — Renews Monthly<br>Yearly: <b>R4 500 / year</b> — Renews Yearly</p><p>All LTSM Features<br>1 School • Up to 300 Learners<br>WhatsApp Support</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20STARTER.%20Setup%20R3000%20once%20forever%20%2B%20Premium%20R350%2Fmonth%20OR%20R4500%2Fyear">➡️📱 REQUEST STARTER</a></div>
 <div class="price pop"><h3>STANDARD</h3><p>⭐ Most Popular</p><div class="setup">Setup: R4 500<br><small style="font-size:12px;color:#059669">✅ ONCE-OFF FOREVER — Never Pay Again</small></div><p><b>Then Choose Premium:</b><br>Monthly: <b>R500 / month</b> — Renews Monthly<br>Yearly: <b>R7 500 / year</b> — Renews Yearly</p><p>All Features<br>Up to 1000 Learners<br>Priority WhatsApp Support + Backup Help</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20STANDARD.%20Setup%20R4500%20once%20forever%20%2B%20Premium%20R500%2Fmonth%20OR%20R7500%2Fyear">➡️📱 REQUEST STANDARD</a></div>
-<div class="price"><h3>PREMIUM</h3><p>Premium</p><div class="setup">Setup: R5 500<br><small style="font-size:12px;color:#059669">✅ ONCE-OFF FOREVER — Never Pay Again</small></div><p><b>Then Choose Premium:</b><br>Monthly: <b>R600 / month</b> — Renews Monthly<br>Yearly: <b>R9 000 / year</b> — Renews Yearly</p><p>All Features • Unlimited Learners<br>Dedicated Support • Staff Training</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20PREMIUM.%20Setup%20R5500%20once%20forever%20%2B%20Premium%20R600%2Fmonth%20OR%20R9000%2Fyear">➡️📱 REQUEST PREMIUM</a></div>
+<div class="price"><h3>PREMIUM</h3><p>Premium</p><div class="setup">Setup: R5 500<br><small style="font-size:12px;color:#059669">✅ ONCE-OFF FOREVER — Never Pay Again</small></div><p><b>Then Choose Premium:</b><br>Monthly: <b>R600 / month</b> — Renews Monthly<br>Yearly: <b>R9 000 / year</b> — Renews Yearly</p><p>All Features • Unlimited Learners<br>Dedicated Support • Staff Training<br>Large Schools / Districts</p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20PREMIUM.%20Setup%20R5500%20once%20forever%20%2B%20Premium%20R600%2Fmonth%20OR%20R9000%2Fyear">➡️📱 REQUEST PREMIUM</a></div>
 </div>
 <div class="card"><h3>❓ Common Questions</h3>
 <p><b>Q: Do I pay Setup every year?</b><br>A: <b>NO.</b> Setup is once-off forever. Next year you pay ONLY Premium.</p>
-<p><b>Q: What is Premium?</b><br>A: Premium is your subscription to keep using Makhanani LTSM — Live Sync, Support, Updates. Choose Monthly or Yearly.</p></div>
+<p><b>Q: What is Premium?</b><br>A: Premium is your subscription to keep using Makhanani LTSM — Live Sync, Support, Updates. Choose Monthly or Yearly.</p>
+<p><b>Q: If I choose Yearly, when do I pay again?</b><br>A: After 12 months. Example: Pay R7 500 in Jan 2026 → Next payment Jan 2027 — Setup NOT charged again.</p>
+<p style="font-size:12px">Confirm on WhatsApp before paying. Never share PIN / OTP / CVV.</p></div>
 </section>
 
 <section class="card"><h2>⭐ Trusted By Schools</h2>
 <blockquote style="border-left:4px solid #d4af37;padding-left:12px"><b>WORDSWORTH HIGH SCHOOL (700310854)</b><br>“Makhanani LTSM helped us know exactly which books are out, who has them, and when they must return. No more paper mess.”</blockquote></section>
 
 <section id="contact" class="card"><h2>📞 Contact Xintimani Group</h2>
-<div class="grid"><div><h3>Founder / CEO</h3><p><b>Mr Vusi Chauke</b><br>WhatsApp: <b>0780233263</b><br>Email: <b>admin@xintimanigroup.co.za</b></p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20to%20register%20my%20school%20for%20Makhanani%20LTSM">💬 WHATSAPP NOW</a></div>
-<div><h3>Send Enquiry</h3><form onsubmit="sendWA(event)"><input id="cName" placeholder="Your Name" required><input id="cSchool" placeholder="School / Business Name" required><select id="cNeed"><option>Need: FREE DEMO - 7 Days</option><option>Need: STARTER - Setup R3000 Once Forever</option><option>Need: STANDARD - Setup R4500 Once Forever</option><option>Need: PREMIUM - Setup R5500 Once Forever</option><option>Need: Website</option></select><textarea id="cMsg" placeholder="Message... Monthly or Yearly Premium?" rows="3"></textarea><button class="btn gold" style="width:100%;border:none;cursor:pointer">📩 SEND VIA WHATSAPP</button></form></div>
-<div><h3>Quick Links</h3><p><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/">📚 Makhanani LTSM System</a><br><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html">💼 Job List By Level</a><br><a href="#pricing">💰 Pricing</a><br><a href="#divisions">🏢 Divisions</a></p></div></div></section>
+<div class="grid"><div><h3>Founder / CEO</h3><p><b>Mr Vusi Chauke</b><br>WhatsApp: <b>0780233263</b><br>Email: <b>admin@xintimanigroup.co.za</b></p><a class="btn greenbtn" href="https://wa.me/27780233263?text=Hello%20Mr%20Chauke%2C%20I%20want%20to%20register%20my%20school%20for%20Makhanani%20LTSM">💬 WHATSAPP NOW</a><br><a class="btn navybtn" href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank">💰 FINANCE 🔒 ADMIN ONLY</a></div>
+<div><h3>Send Enquiry</h3><form onsubmit="sendWA(event)"><input id="cName" placeholder="Your Name" required><input id="cSchool" placeholder="School / Business Name" required><select id="cNeed"><option>Need: FREE DEMO - 7 Days</option><option>Need: STARTER - Setup R3000 Once Forever</option><option>Need: STANDARD - Setup R4500 Once Forever</option><option>Need: PREMIUM - Setup R5500 Once Forever</option><option>Need: Website</option><option>Need: Job List</option></select><textarea id="cMsg" placeholder="Message... Monthly or Yearly Premium?" rows="3"></textarea><button class="btn gold" style="width:100%;border:none;cursor:pointer">📩 SEND VIA WHATSAPP</button></form></div>
+<div><h3>Quick Links</h3><p><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/">📚 Makhanani LTSM System</a><br><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/Joblist.html">💼 Job List By Level — L1 to L6</a><br><a href="https://vusichauke3037-glitch.github.io/MAKHANANI-LTSM/?open=finance" target="_blank">💰 Finance 🔒 Admin Only — Opens LTSM System</a><br><a href="#pricing">💰 Pricing — Setup Once Forever</a><br><a href="#divisions">🏢 Divisions</a></p><p style="font-size:12px;color:#64748b">💰 Finance: No money shown on this public site. Button opens LTSM and asks Admin Password.</p></div></div></section>
 </div>
 
-<footer><img src="logo.png" alt="XINTIMANI GROUP" class="logo-footer" onerror="this.style.display='none'"><h3>XINTIMANI GROUP</h3><p>Building Solutions. Empowering Communities.</p><p>Founder / CEO — Mr Vusi Chauke | WhatsApp 0780233263 | admin@xintimanigroup.co.za</p><p style="font-size:12px;opacity:.8">© 2026 Xintimani Group. All Rights Reserved. | Makhanani LTSM V1.58</p></footer>
+<footer><img src="logo.png" alt="XINTIMANI GROUP" class="logo-footer" onerror="this.style.display='none'"><h3>XINTIMANI GROUP</h3><p>Building Solutions. Empowering Communities.</p><p>Founder / CEO — Mr Vusi Chauke | WhatsApp 0780233263 | admin@xintimanigroup.co.za</p><p style="font-size:12px;opacity:.8">© 2026 Xintimani Group. All Rights Reserved. | Makhanani LTSM V1.58 | Finance = Admin Only</p></footer>
 <script>
 function sendWA(e){e.preventDefault();var n=document.getElementById('cName').value;var s=document.getElementById('cSchool').value;var need=document.getElementById('cNeed').value;var m=document.getElementById('cMsg').value;var txt='Hello Mr Chauke, I am '+n+' from '+s+'. '+need+'. Message: '+m;window.open('https://wa.me/27780233263?text='+encodeURIComponent(txt),'_blank');}
 </script>
